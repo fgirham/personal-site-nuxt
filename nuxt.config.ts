@@ -3,10 +3,19 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   css: ['~/assets/css/main.css'],
   devtools: { enabled: true },
+  runtimeConfig: {
+    steamApiKey: process.env.STEAM_API_KEY || '',
+  },
   fonts: {
     families: [
       {
-        name: 'Roboto',
+        name: 'JetBrains Mono',
+      },
+      {
+        name: 'Inter',
+      },
+      {
+        name: 'Zalando Sans',
       },
       {
         name: 'Zalando Sans Expanded',

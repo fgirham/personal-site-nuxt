@@ -1,6 +1,44 @@
 @import 'tailwindcss';
 @import '@nuxt/ui';
 
-.title {
+@theme {
+  --font-sans: 'Zalando Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root {
+  --ui-bg: var(--color-slate-50);
+  --ui-primary: var(--color-slate-600);
+}
+
+.dark {
+  --ui-bg: var(--color-slate-900);
+  --ui-primary: var(--color-slate-400);
+  --ui-text-muted: var(--color-slate-300);
+}
+
+.min-h-screen-minus-header {
+  min-height: calc(100vh - var(--ui-header-height));
+}
+
+.text-display {
   font-family: 'Zalando Sans Expanded', sans-serif;
+  color: var(--ui-text-highlighted)
+}
+
+.text-title {
+  font-family: 'Zalando Sans', sans-serif;
+  font-weight: 500;
+}
+
+.text-body {
+  font-family: 'Inter', sans-serif;
+}
+
+.text-caption {
+  font-family: 'Inter', sans-serif;
+}
+
+.text-code {
+  font-family: 'JetBrains Mono', monospace;
 }
