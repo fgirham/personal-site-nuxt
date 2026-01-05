@@ -1,8 +1,9 @@
 <script setup lang="ts">
 const colorMode = useColorMode()
+
 const isDark = computed({
   get() {
-    return colorMode.preference === 'dark'
+    return colorMode.value === 'dark'
   },
   set(value: boolean) {
     colorMode.preference = value ? 'dark' : 'light'
