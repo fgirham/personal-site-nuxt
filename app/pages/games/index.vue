@@ -3,17 +3,20 @@ useSeoMeta({
   title: "Games - Irham Personal Site"
 })
 
-// Replace with your actual Steam ID
 const STEAM_ID = "76561198829916006";
 
-// Fetch Steam data from your server API (keeps API key secure)
 const { data: steamData, pending, error } = await useFetch(`/api/steam/profile`, {
+  query: { steamId: STEAM_ID }
+});
+
+// Fetch recently played games
+const { data: recentGames, pending: recentPending, error: recentError } = await useFetch(`/api/steam/recent`, {
   query: { steamId: STEAM_ID }
 });
 </script>
 
 <template>
-  <UContainer class="min-h-screen-minus-header flex flex-col items-center justify-center gap-8 py-8">
+  <PageContainer>
     <h1 class="text-title">
       GAMES
     </h1>
@@ -105,6 +108,52 @@ const { data: steamData, pending, error } = await useFetch(`/api/steam/profile`,
           </UCard>
         </div>
       </div>
+
+      <!-- Recently Played Games -->
+      <div class="space-y-4">
+        <h3 class="text-xl font-semibold">Recently Played Games</h3>
+        <!-- Loading State for Recent -->
+        <div v-if="recentPending" class="space-y-4">
+          <UCard v-for="i in 5" :key="i">
+            <div class="flex items-center gap-4">
+              <USkeleton class="w-12 h-12" />
+              <div class="flex-1 space-y-2">
+                <USkeleton class="h-5 w-48" />
+                <USkeleton class="h-4 w-32" />
+              </div>
+            </div>
+          </UCard>
+        </div>
+        <!-- Error State for Recent -->
+        <UAlert
+          v-else-if="recentError"
+          icon="i-heroicons-exclamation-triangle"
+          color="error"
+          variant="soft"
+          title="Failed to load recently played games"
+          :description="recentError.message || 'An error occurred while fetching your recently played games'"
+          class="w-full"
+        />
+        <!-- Recently Played Games Data -->
+        <div v-else-if="recentGames" class="space-y-4">
+          <UCard v-for="game in recentGames" :key="game.appid">
+            <div class="flex items-center gap-4">
+              <img
+                :src="`https://cdn.cloudflare.steamstatic.com/steam/apps/${game.appid}/capsule_184x69.jpg`"
+                :alt="game.name"
+                class="w-46 h-17.25 rounded object-cover"
+                loading="lazy"
+              >
+              <div class="flex-1">
+                <h2 class="text-lg font-semibold">{{ game.name }}</h2>
+                <p class="text-sm text-gray-500">
+                  Playtime in last 2 weeks: {{ (game.playtime_2weeks / 60).toFixed(1) }} hours
+                </p>
+              </div>
+            </div>
+          </UCard>
+        </div>
+      </div>
     </div>
-  </UContainer>
+  </PageContainer>
 </template>

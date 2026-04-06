@@ -21,6 +21,22 @@ export interface SteamOwnedGame {
   img_logo_url?: string;
 }
 
+export interface SteamRecentlyPlayedGame extends SteamOwnedGame {
+  playtime_2weeks: number;
+}
+
+export interface SteamUserStats {
+  gameName: string;
+  stats: Array<{
+    name: string;
+    value: number;
+  }>;
+  achievements: Array<{
+    name: string;
+    achieved: number;
+  }>;
+}
+
 export class SteamApi {
   private readonly apiKey: string;
 
@@ -86,6 +102,42 @@ export class SteamApi {
     }>(url);
 
     return data.response.games ?? [];
+  }
+
+  /**
+   * Get recently played games
+   */
+  async getRecentlyPlayedGames(
+    steamId: string,
+    count = 5
+  ): Promise<SteamRecentlyPlayedGame[]> {
+    const url =
+      `${STEAM_API_BASE}/IPlayerService/GetRecentlyPlayedGames/v1/` +
+      `?key=${this.apiKey}&steamid=${steamId}&count=${count}`;
+
+    const data = await this.request<{
+      response: { games?: SteamRecentlyPlayedGame[] };
+    }>(url);
+
+    return data.response.games ?? [];
+  }
+
+  /**
+   * Get user stats for a game
+   */
+  async getUserStatsForGame(
+    steamId: string,
+    appId: number
+  ): Promise<SteamUserStats> {
+    const url =
+      `${STEAM_API_BASE}/ISteamUserStats/GetUserStatsForGame/v2/` +
+      `?key=${this.apiKey}&steamid=${steamId}&appid=${appId}`;
+
+    const data = await this.request<{
+      playerstats: SteamUserStats;
+    }>(url);
+
+    return data.playerstats;
   }
 }
 
