@@ -6,7 +6,7 @@ const isHomePage = computed(() => route.path === '/')
 </script>
 
 <template>
-  <UHeader v-if="!isHomePage" mode="drawer">
+  <UHeader v-if="!isHomePage" mode="slideover">
     <template #title>
       <ULink to="/" class="text-display text-lg font-bold">
         FGIRHAM
