@@ -22,5 +22,8 @@ export default defineNuxtConfig({
       }
     ]
   },
-  modules: ['@nuxt/ui', '@nuxt/fonts', '@nuxt/image', '@nuxt/eslint'],
+  modules: ['@nuxt/ui', '@nuxt/fonts', '@nuxt/image', '@nuxt/eslint', 'motion-v/nuxt', 'nuxt-tiptap-editor' ],
+  tiptap: {
+    prefix: 'Tiptap',
+  },
 })
