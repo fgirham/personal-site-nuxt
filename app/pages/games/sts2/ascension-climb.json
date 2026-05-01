@@ -1,0 +1,154 @@
+{
+  "analysisDate": "01/05/2026",
+  "runsAnalyzed": 219,
+  "cutoffRun": "1775131110.run",
+  "characters": [
+    {
+      "id": "IRONCLAD",
+      "name": "Ironclad",
+      "image": "/images/sts2/characters/ironclad.webp",
+      "icon": "/images/sts2/characters/ironclad_icon.png"
+    },
+    {
+      "id": "SILENT",
+      "name": "Silent",
+      "image": "/images/sts2/characters/silent.webp",
+      "icon": "/images/sts2/characters/silent_icon.png"
+    },
+    {
+      "id": "REGENT",
+      "name": "Regent",
+      "image": "/images/sts2/characters/regent.webp",
+      "icon": "/images/sts2/characters/regent_icon.png"
+    },
+    {
+      "id": "NECROBINDER",
+      "name": "Necrobinder",
+      "image": "/images/sts2/characters/necrobinder.webp",
+      "icon": "/images/sts2/characters/necrobinder_icon.png"
+    },
+    {
+      "id": "DEFECT",
+      "name": "Defect",
+      "image": "/images/sts2/characters/defect.webp",
+      "icon": "/images/sts2/characters/defect_icon.png"
+    }
+  ],
+  "overall": {
+    "wins": 55,
+    "losses": 164,
+    "total": 219,
+    "winRate": 25.11
+  },
+  "byCharacter": [
+    {
+      "character": "IRONCLAD",
+      "wins": 11,
+      "losses": 17,
+      "total": 28,
+      "winRate": 39.29
+    },
+    {
+      "character": "SILENT",
+      "wins": 11,
+      "losses": 34,
+      "total": 45,
+      "winRate": 24.44
+    },
+    {
+      "character": "REGENT",
+      "wins": 11,
+      "losses": 33,
+      "total": 44,
+      "winRate": 25.00
+    },
+    {
+      "character": "NECROBINDER",
+      "wins": 11,
+      "losses": 44,
+      "total": 55,
+      "winRate": 20.00
+    },
+    {
+      "character": "DEFECT",
+      "wins": 11,
+      "losses": 36,
+      "total": 47,
+      "winRate": 23.40
+    }
+  ],
+  "byAscension": [
+    { "ascension": 1, "wins": 5, "losses": 22, "total": 27, "winRate": 18.52 },
+    { "ascension": 2, "wins": 5, "losses": 7, "total": 12, "winRate": 41.67 },
+    { "ascension": 3, "wins": 5, "losses": 0, "total": 5, "winRate": 100.00 },
+    { "ascension": 4, "wins": 5, "losses": 10, "total": 15, "winRate": 33.33 },
+    { "ascension": 5, "wins": 5, "losses": 8, "total": 13, "winRate": 38.46 },
+    { "ascension": 6, "wins": 5, "losses": 18, "total": 23, "winRate": 21.74 },
+    { "ascension": 7, "wins": 5, "losses": 6, "total": 11, "winRate": 45.45 },
+    { "ascension": 8, "wins": 5, "losses": 6, "total": 11, "winRate": 45.45 },
+    { "ascension": 9, "wins": 5, "losses": 51, "total": 56, "winRate": 8.93 },
+    { "ascension": 10, "wins": 5, "losses": 28, "total": 33, "winRate": 15.15 }
+  ],
+  "byCharacterAndAscension": {
+    "IRONCLAD": [
+      { "ascension": 1, "wins": 1, "losses": 5, "total": 6, "winRate": 16.67 },
+      { "ascension": 2, "wins": 1, "losses": 0, "total": 1, "winRate": 100.00 },
+      { "ascension": 3, "wins": 1, "losses": 0, "total": 1, "winRate": 100.00 },
+      { "ascension": 4, "wins": 1, "losses": 2, "total": 3, "winRate": 33.33 },
+      { "ascension": 5, "wins": 1, "losses": 4, "total": 5, "winRate": 20.00 },
+      { "ascension": 6, "wins": 1, "losses": 0, "total": 1, "winRate": 100.00 },
+      { "ascension": 7, "wins": 1, "losses": 1, "total": 2, "winRate": 50.00 },
+      { "ascension": 8, "wins": 1, "losses": 0, "total": 1, "winRate": 100.00 },
+      { "ascension": 9, "wins": 1, "losses": 4, "total": 5, "winRate": 20.00 },
+      { "ascension": 10, "wins": 1, "losses": 1, "total": 2, "winRate": 50.00 }
+    ],
+    "SILENT": [
+      { "ascension": 1, "wins": 1, "losses": 3, "total": 4, "winRate": 25.00 },
+      { "ascension": 2, "wins": 1, "losses": 0, "total": 1, "winRate": 100.00 },
+      { "ascension": 3, "wins": 1, "losses": 0, "total": 1, "winRate": 100.00 },
+      { "ascension": 4, "wins": 1, "losses": 3, "total": 4, "winRate": 25.00 },
+      { "ascension": 5, "wins": 1, "losses": 0, "total": 1, "winRate": 100.00 },
+      { "ascension": 6, "wins": 1, "losses": 4, "total": 5, "winRate": 20.00 },
+      { "ascension": 7, "wins": 1, "losses": 4, "total": 5, "winRate": 20.00 },
+      { "ascension": 8, "wins": 1, "losses": 3, "total": 4, "winRate": 25.00 },
+      { "ascension": 9, "wins": 1, "losses": 2, "total": 3, "winRate": 33.33 },
+      { "ascension": 10, "wins": 1, "losses": 14, "total": 15, "winRate": 6.67 }
+    ],
+    "REGENT": [
+      { "ascension": 1, "wins": 1, "losses": 4, "total": 5, "winRate": 20.00 },
+      { "ascension": 2, "wins": 1, "losses": 3, "total": 4, "winRate": 25.00 },
+      { "ascension": 3, "wins": 1, "losses": 0, "total": 1, "winRate": 100.00 },
+      { "ascension": 4, "wins": 1, "losses": 4, "total": 5, "winRate": 20.00 },
+      { "ascension": 5, "wins": 1, "losses": 1, "total": 2, "winRate": 50.00 },
+      { "ascension": 6, "wins": 1, "losses": 2, "total": 3, "winRate": 33.33 },
+      { "ascension": 7, "wins": 1, "losses": 0, "total": 1, "winRate": 100.00 },
+      { "ascension": 8, "wins": 1, "losses": 1, "total": 2, "winRate": 50.00 },
+      { "ascension": 9, "wins": 1, "losses": 8, "total": 9, "winRate": 11.11 },
+      { "ascension": 10, "wins": 1, "losses": 4, "total": 5, "winRate": 20.00 }
+    ],
+    "NECROBINDER": [
+      { "ascension": 1, "wins": 1, "losses": 9, "total": 10, "winRate": 10.00 },
+      { "ascension": 2, "wins": 1, "losses": 2, "total": 3, "winRate": 33.33 },
+      { "ascension": 3, "wins": 1, "losses": 0, "total": 1, "winRate": 100.00 },
+      { "ascension": 4, "wins": 1, "losses": 0, "total": 1, "winRate": 100.00 },
+      { "ascension": 5, "wins": 1, "losses": 1, "total": 2, "winRate": 50.00 },
+      { "ascension": 6, "wins": 1, "losses": 0, "total": 1, "winRate": 100.00 },
+      { "ascension": 7, "wins": 1, "losses": 1, "total": 2, "winRate": 50.00 },
+      { "ascension": 8, "wins": 1, "losses": 0, "total": 1, "winRate": 100.00 },
+      { "ascension": 9, "wins": 1, "losses": 26, "total": 27, "winRate": 3.70 },
+      { "ascension": 10, "wins": 1, "losses": 4, "total": 5, "winRate": 20.00 }
+    ],
+    "DEFECT": [
+      { "ascension": 1, "wins": 1, "losses": 1, "total": 2, "winRate": 50.00 },
+      { "ascension": 2, "wins": 1, "losses": 2, "total": 3, "winRate": 33.33 },
+      { "ascension": 3, "wins": 1, "losses": 0, "total": 1, "winRate": 100.00 },
+      { "ascension": 4, "wins": 1, "losses": 1, "total": 2, "winRate": 50.00 },
+      { "ascension": 5, "wins": 1, "losses": 2, "total": 3, "winRate": 33.33 },
+      { "ascension": 6, "wins": 1, "losses": 12, "total": 13, "winRate": 7.69 },
+      { "ascension": 7, "wins": 1, "losses": 0, "total": 1, "winRate": 100.00 },
+      { "ascension": 8, "wins": 1, "losses": 2, "total": 3, "winRate": 33.33 },
+      { "ascension": 9, "wins": 1, "losses": 11, "total": 12, "winRate": 8.33 },
+      { "ascension": 10, "wins": 1, "losses": 5, "total": 6, "winRate": 16.67 }
+    ]
+  }
+}

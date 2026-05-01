@@ -9,6 +9,7 @@
 :root {
   --ui-bg: var(--color-slate-50);
   --ui-primary: var(--color-slate-600);
+  --bg-overlay: rgba(0, 0, 0, 0.6);
 }
 
 .dark {
